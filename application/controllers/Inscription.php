@@ -14,11 +14,12 @@ class Inscription extends CI_Controller {
 	public function index()
 	{
         $this->load->view("Header");
-		$this->load->view('Inscription');
+		$this->load->view('Inscription'); 
 		$this->load->view("Footer");
 	}
 
 	public function form_validation(){
+
 		$this->load->library('form_validation');
 		//$this->form_validation->set_message('required', '{field} doit etre remplis.');
 		$this->form_validation->set_error_delimiters('<div class="errorFormInscription">', '</div>');

@@ -20,7 +20,7 @@
           <p>date de fin : <?=$loc->dateEnd; ?></p>
           <p>Kilometrage de départ : <?=$loc->kilometersStart; ?> km</p>
           <p>Kilométrage de fin : <?=$loc->kilometersEnd; ?> km</p>
-          <p>Défaut de la voiture : <?=$loc->defectCar; ?></p>
+          <p>prix de la location : <?=$loc->priceLoc; ?> €</p>
           <p>Location accepter : <?=$loc->acceptLoc; ?></p>  
           <p>Voiture rendu : <?=$loc->returnLoc; ?></p>  
     <?php } //$this->load->view("Inscription");?>

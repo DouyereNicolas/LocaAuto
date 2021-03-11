@@ -17,8 +17,8 @@ class Administration_Model extends CI_Model{
     }
 
     public function getAllLocation(){
-        $this->db->join("user","user.id = location.id_User","inner");
-        $this->db->join("cars","cars.id = location.id_Cars","inner");
+        $this->db->join("user","user.id_U = location.id_User","left");
+        $this->db->join("cars","cars.id_C = location.id_Cars","left");
         $location = $this->db->get("location");
         return $location->result();
     }

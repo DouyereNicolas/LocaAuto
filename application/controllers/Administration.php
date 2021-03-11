@@ -22,14 +22,14 @@ class Administration extends CI_Controller {
 			$this->load->view('Administration_Admin',$data);
 			$this->load->view("Footer");
 		}else{
-			$data["location"] = $this->Administration_Model->getLocation($data["user"][0]->id);
+			$data["location"] = $this->Administration_Model->getLocation($data["user"][0]->id_U);
 			$this->load->view("Header");
 			$this->load->view('Administration_User',$data);
 			$this->load->view("Footer");
 		}
 
 		
-	}
+	} 
 
 }
  

@@ -8,7 +8,7 @@ class Connexion_Model extends CI_Model{
 
     public function getUser($data){
 
-        $this->db->join("password","user.id = password.id_User","inner");
+        $this->db->join("password","user.id_U = password.id_User","inner");
         $user = $this->db->get_where("user",$data);
         return $user->result();
     }

@@ -13,7 +13,7 @@
 <label for="login">Nom d'utilisateur</label>
 <input type="text" name="login" id="login" value="<?= set_value('login'); ?>" size="20" />
 <p><?php echo form_error('login'); ?></p>
-
+ 
 <label for="pass">Mot de passe</label>
 <input type="text" name="pass" id="pass" value="<?= set_value('pass'); ?>" size="20" />
 <p><?php echo form_error('pass'); ?></p>
